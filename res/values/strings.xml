@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">CherryLib</string>
+    <string name="txt_cherrypicks_logo">CherryPicks Demo</string>
+    <string name="txt_add">Add Item</string>
+    <string name="txt_edit">Edit</string>
+    <string name="txt_delete">Delete</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_update">Update</string>
+    <string name="txt_hint_name">Name</string>
+    <string name="txt_hint_population">Population</string>
+
+    <!-- Dialog -->
+    <string name="txt_error">Error</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="txt_error_message">Error message</string>
+
+    <!-- Address format -->
+    <string name="address_output_string">%1$s %2$s %3$s</string>
+
+    <!-- Latitude, longitude format -->
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+
+    <!-- Menu title -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Labels -->
+    <string name="latlng">Lat/Long:</string>
+    <string name="address">Address:</string>
+    <string name="start_updates">Start Updates</string>
+    <string name="stop_updates">Stop Updates</string>
+    <string name="unknown">--Unknown--</string>
+    <string name="unknown_activity_request_code">        Received an unknown activity request code %1$d in onActivityResult.</string>
+    <string name="get_address">Get Address</string>
+    <string name="get_location">Get Location</string>
+    <string name="location_updates_stopped">Periodic updates stopped</string>
+    <string name="location_requested">Periodic updates requested</string>
+    <string name="no_resolution">Google Play services: unable to resolve connection error.</string>
+    <string name="connected">Client connected</string>
+    <string name="resolved">Error resolved. Please re-try operation.</string>
+    <string name="no_resolution">Google Play services: unable to resolve connection error.</string>
+    <string name="disconnected">Client disconnected</string>
+    <string name="play_services_available">Google Play services is available</string>
+    <string name="no_geocoder_available">Cannot get address. No geocoder available.</string>
+    <string name="IO_Exception_getFromLocation">IO Exception in Geocoder.getFromLocation()</string>
+    <string name="no_address_found">No address found for location</string>
+    <string name="illegal_argument_exception">        Illegal arguments: Latitude %1$.8f Longitude %2$.8f</string>
+        <string name="location_updated">Location updated</string>
+
+</resources>

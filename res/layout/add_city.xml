@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/txt_hint_name"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name"
+        android:layout_margin="5dp"
+        android:hint="@string/txt_hint_name" />
+
+    <TextView
+        android:id="@+id/txt_population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:layout_margin="5dp"
+        android:text="@string/txt_hint_population"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edt_population"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_population"
+        android:layout_margin="5dp"
+        android:hint="@string/txt_hint_population" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_population"
+        android:layout_margin="5dp"
+        android:hint="@string/txt_save" />
+
+</RelativeLayout>
