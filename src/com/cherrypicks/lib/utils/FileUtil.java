@@ -20,6 +20,8 @@ public class FileUtil {
 
 	private static final int FILESIZE = 4 * 1024;
 	private static final String SD_BASE_PATH = "CherryLib";
+	
+
 
 	/**
 	 * Whether the sd card exist

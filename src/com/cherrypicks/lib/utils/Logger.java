@@ -4,7 +4,6 @@ import java.util.Hashtable;
 
 import android.util.Log;
 
-
 /**
  * Print log
  * 
@@ -20,7 +19,7 @@ public class Logger {
 	private String mClassName;
 
 	private static Logger Jlog;
-	private static Logger Wlog;
+	private static Logger Blog;
 
 	private static final String Jerry = "@Jerry@ ";
 	private static final String Ben = "@Ben@ ";
@@ -50,10 +49,10 @@ public class Logger {
 	 * @return
 	 */
 	public static Logger Blog() {
-		if (Wlog == null) {
-			Wlog = new Logger(Ben);
+		if (Blog == null) {
+			Blog = new Logger(Ben);
 		}
-		return Wlog;
+		return Blog;
 	}
 
 	/**
