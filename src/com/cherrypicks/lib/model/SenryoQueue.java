@@ -10,7 +10,7 @@ import java.util.Date;
  */
 public class SenryoQueue {
 
-	public class Branch {
+	public static class Branch {
 
 		private String branch;
 		private String branchstatus;
@@ -51,7 +51,7 @@ public class SenryoQueue {
 
 	}
 
-	public class GetTicket {
+	public static class GetTicket {
 		private String status;
 		private String branch;
 		private String ticketid;
@@ -100,7 +100,7 @@ public class SenryoQueue {
 
 	}
 
-	public class RetrieveTicket {
+	public static class RetrieveTicket {
 		private String status;
 		private String branch;
 		private String ticketid;
