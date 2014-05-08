@@ -14,6 +14,12 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * ParseUtil, Parse json data and return collection or model.
+ * @author Benkwan
+ *
+ * @param <T>
+ */
 public class ParserUtil<T> {
 	
 	public List<T> getMemberList(final String str)
