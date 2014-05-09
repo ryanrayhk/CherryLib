@@ -70,7 +70,7 @@ public class NetworkDemoFragment extends BaseFragment {
 	public void initValues() {
 		// TODO Auto-generated method stub
 		logger = Logger.Jlog();
-		manager = NetworkManager.getInstance();
+		manager = new NetworkManager();
 	}
 
 	@Override
