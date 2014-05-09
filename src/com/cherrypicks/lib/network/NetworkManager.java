@@ -28,26 +28,9 @@ import com.loopj.android.http.RequestParams;
  * @since 1.0.0
  * @author Jerry Zhang<jerryzhang@cherrypicks.com>
  */
-public class NetworkManager implements Imember,IQueuing {
+public class NetworkManager implements Imember, IQueuing {
 
 	private AsyncHttpClient client = new AsyncHttpClient();
-
-//	// Prevent direct access to the constructor
-//	private NetworkManager() {
-//	};
-//
-//	/**
-//	 * NetworkManagerHolder is loaded on the first execution of
-//	 * NetworkManager.getInstance() or the first access to
-//	 * NetworkManagerHolder.instance, not before.
-//	 */
-//	private static class NetworkManagerHolder {
-//		private static final NetworkManager instance = new NetworkManager();
-//	}
-//
-//	public static NetworkManager getInstance() {
-//		return NetworkManagerHolder.instance;
-//	}
 
 	@Override
 	public void getMembers(final RequestParams params,
@@ -67,7 +50,7 @@ public class NetworkManager implements Imember,IQueuing {
 				try {
 					List<Member> memberList = new ParserUtil<Member>()
 							.getMemberList(response);
-					
+
 					onSuccess.execute(memberList);
 				} catch (Exception e) {
 					onFailure.equals(new JsonError(
@@ -170,54 +153,79 @@ public class NetworkManager implements Imember,IQueuing {
 
 	}
 
-	/* (non-Javadoc)
-	 * @see com.cherrypicks.lib.protocol.IQueuing#getBranchStatus(com.loopj.android.http.RequestParams, com.cherrypicks.lib.protocol.Callback, com.cherrypicks.lib.protocol.Callback)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.cherrypicks.lib.protocol.IQueuing#getBranchStatus(com.loopj.android
+	 * .http.RequestParams, com.cherrypicks.lib.protocol.Callback,
+	 * com.cherrypicks.lib.protocol.Callback)
 	 */
 	@Override
 	public void getBranchStatus(RequestParams params,
 			Callback<List<Member>> onSuccess, Callback<Exception> onFailure) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
-	 * @see com.cherrypicks.lib.protocol.IQueuing#getTicket(com.loopj.android.http.RequestParams, com.cherrypicks.lib.protocol.Callback, com.cherrypicks.lib.protocol.Callback)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.cherrypicks.lib.protocol.IQueuing#getTicket(com.loopj.android.http
+	 * .RequestParams, com.cherrypicks.lib.protocol.Callback,
+	 * com.cherrypicks.lib.protocol.Callback)
 	 */
 	@Override
 	public void getTicket(RequestParams params,
 			Callback<List<Member>> onSuccess, Callback<Exception> onFailure) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
-	 * @see com.cherrypicks.lib.protocol.IQueuing#updateTicket(com.loopj.android.http.RequestParams, com.cherrypicks.lib.protocol.Callback, com.cherrypicks.lib.protocol.Callback)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.cherrypicks.lib.protocol.IQueuing#updateTicket(com.loopj.android.
+	 * http.RequestParams, com.cherrypicks.lib.protocol.Callback,
+	 * com.cherrypicks.lib.protocol.Callback)
 	 */
 	@Override
 	public void updateTicket(RequestParams params,
 			Callback<List<Member>> onSuccess, Callback<Exception> onFailure) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
-	 * @see com.cherrypicks.lib.protocol.IQueuing#cancelTicket(com.loopj.android.http.RequestParams, com.cherrypicks.lib.protocol.Callback, com.cherrypicks.lib.protocol.Callback)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.cherrypicks.lib.protocol.IQueuing#cancelTicket(com.loopj.android.
+	 * http.RequestParams, com.cherrypicks.lib.protocol.Callback,
+	 * com.cherrypicks.lib.protocol.Callback)
 	 */
 	@Override
 	public void cancelTicket(RequestParams params,
 			Callback<List<Member>> onSuccess, Callback<Exception> onFailure) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
-	 * @see com.cherrypicks.lib.protocol.IQueuing#retrieveTicket(com.loopj.android.http.RequestParams, com.cherrypicks.lib.protocol.Callback, com.cherrypicks.lib.protocol.Callback)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.cherrypicks.lib.protocol.IQueuing#retrieveTicket(com.loopj.android
+	 * .http.RequestParams, com.cherrypicks.lib.protocol.Callback,
+	 * com.cherrypicks.lib.protocol.Callback)
 	 */
 	@Override
 	public void retrieveTicket(RequestParams params,
 			Callback<List<Member>> onSuccess, Callback<Exception> onFailure) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
