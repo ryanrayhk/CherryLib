@@ -39,13 +39,13 @@
     <string name="no_resolution">Google Play services: unable to resolve connection error.</string>
     <string name="connected">Client connected</string>
     <string name="resolved">Error resolved. Please re-try operation.</string>
-    <string name="no_resolution">Google Play services: unable to resolve connection error.</string>
     <string name="disconnected">Client disconnected</string>
     <string name="play_services_available">Google Play services is available</string>
     <string name="no_geocoder_available">Cannot get address. No geocoder available.</string>
     <string name="IO_Exception_getFromLocation">IO Exception in Geocoder.getFromLocation()</string>
     <string name="no_address_found">No address found for location</string>
     <string name="illegal_argument_exception">        Illegal arguments: Latitude %1$.8f Longitude %2$.8f</string>
-        <string name="location_updated">Location updated</string>
+    <string name="location_updated">Location updated</string>
+    <string name="btn_speech">Speech</string>
 
 </resources>

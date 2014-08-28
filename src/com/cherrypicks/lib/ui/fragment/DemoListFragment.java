@@ -25,7 +25,7 @@ public class DemoListFragment extends BaseFragment {
 	private ListView list_demo;
 	private ArrayAdapter<String> adapter;
 	private String[] array = { "Http Request", "Gcm", "Database", "Json Parse",
-			"UnZip", "FaceBook", "Location" };
+			"UnZip", "FaceBook", "Location", "TTS" };
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -106,7 +106,10 @@ public class DemoListFragment extends BaseFragment {
 
 					break;
 				case CherryConfig.LOOPER_JSON:
-
+					getFragmentTransaction();
+					ft.replace(R.id.layout_container, new JsonParseFragment());
+					ft.addToBackStack("Menu");
+					ft.commit();
 					break;
 				case CherryConfig.LOOPER_UNZIP:
 
@@ -125,6 +128,13 @@ public class DemoListFragment extends BaseFragment {
 					ft.replace(R.id.layout_container,
 							new TestLocationFragment());
 					ft.addToBackStack("location");
+					ft.commit();
+					break;
+				case CherryConfig.LOOPER_TTS:
+
+					getFragmentTransaction();
+					ft.replace(R.id.layout_container, new TtsFragment());
+					ft.addToBackStack("tts");
 					ft.commit();
 					break;
 				}

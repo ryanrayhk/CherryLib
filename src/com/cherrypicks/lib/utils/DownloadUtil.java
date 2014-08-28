@@ -9,6 +9,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import com.cherrypicks.lib.error.HttpError;
+import com.cherrypicks.lib.protocol.IDownload;
+
 /**
  * DownloadUtil,download files from internet.
  * 
@@ -22,6 +25,33 @@ public class DownloadUtil {
 	}
 
 	private URL url = null;
+	
+	public void download(String urlStr, String path, String fileName,IDownload iDownload)
+	{
+		InputStream inputStream = null;
+		try {
+
+			if (FileUtil.isFileExist(path + fileName)) {
+				iDownload.onError(new Exception("File already exist."));
+			} else {
+				inputStream = getInputStreamFromURL(urlStr);
+				File resultFile = FileUtil.write2SDFromInput(path, fileName,
+						inputStream);
+				if (resultFile == null) {
+					iDownload.onError(new Exception("Write stream to file error!"));
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			iDownload.onError(new HttpError("Http error!"));
+		} finally {
+			try {
+				inputStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
 
 	/**
 	 * According to URL, the content of the file is text,and the return value is

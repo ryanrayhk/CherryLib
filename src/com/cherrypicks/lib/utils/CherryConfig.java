@@ -20,4 +20,5 @@ public class CherryConfig {
 	public static final int LOOPER_UNZIP = 4;
 	public static final int LOOPER_FACEBOOK = 5;
 	public static final int LOOPER_LOCATION = 6;
+	public static final int LOOPER_TTS = 7;
 }
